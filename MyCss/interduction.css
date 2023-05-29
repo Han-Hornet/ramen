@@ -1,0 +1,116 @@
+@media screen and (min-width: 1300px)
+{
+    p
+    {
+        font-size: x-large;
+        text-indent: 60px;
+        /* background-color: red; */
+    }
+    .contenttitle
+    {
+        font-size: 40px;
+        text-align: center;
+        font-weight: bolder;
+        text-indent: 0;
+        color: ;
+    }
+    .specialtext
+    {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline wavy red 1px;
+    }
+    .mycontent2
+    {
+        padding: 0 50px 0 50px;
+        /* background-color: red; */
+    }
+}
+@media screen 
+and (min-width: 900px) and (max-width: 1300px)
+{
+    p
+    {
+        font-size: large;
+        text-indent: 40px;
+        /* background-color: red; */
+    }
+    .contenttitle
+    {
+        font-size: 30px;
+        text-align: center;
+        font-weight: bolder;
+        text-indent: 0;
+        color: ;
+    }
+    .specialtext
+    {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline wavy red 1px;
+    }
+    .mycontent
+    {
+        padding: 0 50px 0 50px;
+        /* background-color: red; */
+    }
+
+}
+@media screen 
+and (min-width: 640px) and (max-width: 900px)
+{
+    p
+    {
+        font-size:medium ;
+        text-indent: 30px;
+        /* background-color: red; */
+    }
+    .contenttitle
+    {
+        font-size: 25px;
+        text-align: center;
+        font-weight: bolder;
+        text-indent: 0;
+        color: ;
+    }
+    .specialtext
+    {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline wavy red 1px;
+    }
+    .mycontent
+    {
+        padding: 0 50px 0 50px;
+        /* background-color: red; */
+    }
+}
+@media screen 
+ and (max-width: 640px)
+{
+    p
+    {
+        font-size:smaller ;
+        text-indent: 20px;
+        /* background-color: red; */
+    }
+    .contenttitle
+    {
+        font-size: 15px;
+        text-align: center;
+        font-weight: bolder;
+        text-indent: 0;
+        color: ;
+    }
+    .specialtext
+    {
+        color: red;
+        font-weight: bold;
+        text-decoration: underline wavy red 1px;
+    }
+    .mycontent
+    {
+        padding: 0 50px 0 50px;
+        /* background-color: red; */
+    }
+}

@@ -1,0 +1,782 @@
+/* ---------------------------------文字字型區---------------------------- */
+
+@font-face {
+    font-family: 'Permanent_Marker';
+    src: url('../fontfamily/EN/Permanent_Marker/PermanentMarker-Regular.ttf');
+}
+@font-face {
+    font-family: 'JP';  /* 日文誇張粗字體 */
+    src: url('../fontfamily/JP/Reggae_One/ReggaeOne-Regular.ttf');
+}
+@font-face {
+    font-family: 'Shippori Mincho';  /* 日文正常書法體 */
+    src: url('../fontfamily/JP/Shippori_Mincho/ShipporiMincho-ExtraBold.ttf');
+}
+/* ---------------------------------文字字型區---------------------------- */
+
+
+/* 共用設定 */
+.rightinput{
+    margin-top:8% ;
+    /* background-color:red ; */
+}   
+
+.lefttitle-inside
+{
+    /* background-color: red; */
+    z-index: 3;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+/* 共用設定 */
+@media screen 
+and (min-width: 1300px)
+{
+    /* body
+    {
+        background-image: url("../MyIMG/1029324.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        
+    
+    } */
+    header::before {    
+        content: "";
+        background-image: url('../MyIMG/1029324.jpg');
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+        z-index: -2;
+    }
+    
+   
+    /* 菜單調整 */
+    span.navbar-toggler-icon{margin-top: 17%;}
+    /* 菜單調整 */
+    header
+    {
+        
+    }
+    div.titlefont2
+    {
+        /* font-size: 1vmin; */
+        font-size:40px ;       
+        position: relative;
+        margin-top: -13%;
+        /* margin-top: -10px; */
+        margin-left: 5px;        
+    }
+    div.titlefont
+    {
+        font-size: 400%;
+        
+        /* font-size: 70px; */
+    }
+
+
+            
+/* 互動效果區塊 */
+    img.titleramen:hover
+    {
+        transform: rotate(30deg);
+
+    }
+    div.titleIMG:hover
+    {
+        transform: rotate(10deg);
+        font-size: 110%;
+        
+    }
+    a:visited
+    {
+        color: rgba(190, 0, 0, 0.808);
+        
+    }  
+
+
+/* 左邊標題區塊 */
+    div.lefttitle-outside
+    {
+        /* background-color: red; */
+        /* position: relative; */
+        /* opacity: 1; */
+    
+    }
+
+    div.lefttitle-inside
+    {
+        /* 使菜單在區塊中間 */
+        margin-top: 45px ;
+        /* background-color: red; */
+        display: inline-block;
+        /* width: auto;
+        height: auto; */
+        font-family: 'Permanent_Marker';
+    }
+    div.lefttitle-inside
+    {
+        font-size: 50px;
+    }
+
+
+    i.bi-list
+    {
+        font-size:smaller ;
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    span.navbar-toggler-icon
+    {
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808); 
+        /* background-color: red; */
+    }
+    .collapse
+    {
+        /* position: absolute; */
+    }
+
+/* 正中間標題區塊 */
+    div.toplogal
+    {
+        /* background-color: aqua; */
+        text-align: center;
+        color: rgba(204, 76, 75, 0.9);
+    }
+
+    div.titleIMG
+    {
+        display: inline-block;  
+        /* background-color: violet; */
+    }
+    div.titlefont,div.titlefont2
+    {
+        font-family: 'Shippori Mincho'; 
+    }
+
+    img.titleramen
+    {
+        transform:rotate(345deg) ;
+        width: 110px;
+        margin-right: -6px;
+        margin-bottom: 8vh;
+        /* background-color: red; */
+    }
+    div.topfile
+    {
+        /* background-color: lightpink; */
+    }
+
+/* 標題行右邊區塊 */
+    div.righttitle
+    {
+        text-align: right;
+        margin-right: 30px;
+        font-size: 20px;   
+        font-family: '';  
+    }
+    #searchGoogle
+    {   
+        /* opacity: 0.7; */
+        height: 40px;
+        width: 300px;
+        margin-top: 50px;
+        /* background-color: red; */
+    }
+    span#searchspan:hover
+    {
+        cursor: pointer;
+        color: rgba(255, 182, 193, 0.7);
+        /* font-size: 25px;
+        margin-right: -12.5px; */
+    }
+    #searchGoogle:focus
+    {
+        background-color: rgba(245, 245, 245, 0.9);
+        /* color: gray; */
+        border-width: 3px;
+    }
+    .rightinput{
+        margin-top:5% ; 
+        position: relative;
+        /* background-color:red ; */
+    }
+    /* 2023_02_19修改右上角文字不會跑版 */
+    .rightinput>b
+    {
+        margin-left: -10px;
+    }
+
+    span#searchspan
+    {
+        /* display: inline-block; */
+        position: relative;
+        right: -10px;
+    }
+
+
+}
+@media screen 
+and (min-width: 900px) and (max-width: 1300px)
+{
+       
+    /* body
+    {
+        background-image: url("../MyIMG/1029325.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 60%;
+
+    } */
+    header::before {    
+        content: "";
+        background-image: url('../MyIMG/1029324.jpg');
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+        z-index: -2;
+        background-position-x: 20%;
+    }
+   
+    /* 菜單調整 */
+    span.navbar-toggler-icon{margin-top: 17%;}
+    /* 菜單調整 */
+            
+/* 互動效果區塊 */
+    img.titleramen:hover
+    {
+        transform: rotate(30deg);
+
+    }
+    div.titleIMG:hover
+    {
+        transform: rotate(10deg);
+        font-size: 110%;
+        /* margin-top: -2000px;
+    margin-right: -15px; */
+        
+    }
+    a:visited
+    {
+        color: rgba(190, 0, 0, 0.808);
+        
+    }    
+
+
+/* 左邊標題區塊 */
+    div.lefttitle-outside
+    {
+        /* background-color: red; */
+        /* position: relative; */
+         /* opacity: 1; */
+    
+    }
+
+    div.lefttitle-inside
+    {
+        /* 使菜單在區塊中間 */
+        margin-top: 50px;
+        /* background-color: red; */
+        display: inline-block;
+        /* width: auto;
+        height: auto; */
+        font-family: 'Permanent_Marker';
+    }
+    div.lefttitle-inside
+    {
+        font-size: 30px;
+    }
+
+
+    i.bi-list
+    {
+        font-size:smaller ;
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    span.navbar-toggler-icon
+    {
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    .collapse
+    {
+        /* position: absolute; */
+    }
+
+/* 正中間標題區塊 */
+
+div.titlefont2
+{
+    /* font-size: 1vmin; */
+    font-size: 30px ;       
+    position: relative;
+    margin-top: -13%;
+    /* margin-top: -10px; */
+    margin-left: 5px;        
+}
+div.titlefont
+{
+    font-size: 320%;
+    
+    /* font-size: 50px; */
+}
+
+
+    div.toplogal
+    {
+        /* background-color: aqua; */
+        text-align: center;
+        color: rgba(204, 76, 75, 0.9);
+        margin-left: -100px;
+    }
+
+    div.titleIMG
+    {
+        display: inline-block;
+        /* background-color: violet; */
+    }
+    div.titlefont,div.titlefont2
+    {
+        font-family: 'Shippori Mincho'; 
+    }
+
+    img.titleramen
+    {
+        transform:rotate(345deg) ;
+        width: 80px;
+        margin-right: -6px;
+        margin-bottom: 50px;
+        /* background-color: red; */
+    }
+    div.topfile
+    {
+        /* background-color: lightpink; */
+    }
+
+/* 標題行右邊區塊 */
+    div.righttitle
+    {
+        text-align: right;
+        margin-right: 30px;
+        font-size: 18px;   
+        font-family: '';  
+    }
+    #searchGoogle
+    {   
+        /* opacity: 0.7; */
+        height: 30px;
+        width: 200px;
+        margin-top: 30px;
+        /* background-color: red; */
+    }
+    span#searchspan:hover
+    {
+        cursor: pointer;
+        color: rgba(255, 182, 193, 0.7);
+        /* font-size: 25px;
+        margin-right: -12.5px; */
+    }
+    #searchGoogle:focus
+    {
+        background-color: rgba(245, 245, 245, 0.9);
+        /* color: gray; */
+        border-width: 3px;
+    }
+
+
+
+}
+@media screen 
+and (min-width: 640px) and (max-width: 900px)
+{
+       
+    /* body
+    {
+        background-image: url("../MyIMG/1029325.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 75%;
+
+    } */
+    header::before {    
+        content: "";
+        background-image: url('../MyIMG/1029324.jpg');
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+        z-index: -2;
+        background-position-x: 35%;
+    }
+   
+    /* 菜單調整 */
+    span.navbar-toggler-icon{margin-top: 17%;}
+    /* 菜單調整 */
+            
+/* 互動效果區塊 */
+    img.titleramen:hover
+    {
+        transform: rotate(30deg);
+
+    }
+    div.titleIMG:hover
+    {
+        transform: rotate(10deg);
+        font-size: 110%;
+        /* margin-top: -2000px;
+    margin-right: -15px; */
+        
+    }
+    a:visited
+    {
+        color: rgba(190, 0, 0, 0.808);
+        
+    }    
+
+
+/* 左邊標題區塊 */
+    div.lefttitle-outside
+    {
+        /* background-color: red; */
+        /* position: relative; */
+        z-index: ;
+    
+    }
+
+    div.lefttitle-inside
+    {
+        /* 使菜單在區塊中間 */
+        margin-top: 40px ;
+        /* background-color: red; */
+        display: inline-block;
+        /* width: auto;
+        height: auto; */
+        font-family: 'Permanent_Marker';
+    }
+    div.lefttitle-inside
+    {
+        font-size: 22px;
+    }
+
+
+    i.bi-list
+    {
+        font-size:smaller ;
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    span.navbar-toggler-icon
+    {
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    .collapse
+    {
+        /* position: absolute; */
+    }
+
+/* 正中間標題區塊 */
+header
+{
+    
+}
+div.titlefont2
+{
+    /* font-size: 1vmin; */
+    font-size: 20px ;       
+    position: relative;
+    margin-top: -13%;
+    /* margin-top: -10px; */
+    margin-left: 5px;        
+}
+div.titlefont
+{
+    font-size: 260%;
+    
+    /* font-size: 50px; */
+}
+
+
+    div.toplogal
+    {
+        /* background-color: aqua; */
+        text-align: center;
+        color: rgba(204, 76, 75, 0.9);
+        margin-left: -100px;
+    }
+
+    div.titleIMG
+    {
+        display: inline-block;
+        /* background-color: violet; */
+    }
+    div.titlefont,div.titlefont2
+    {
+        font-family: 'Shippori Mincho'; 
+    }
+
+    img.titleramen
+    {
+        transform:rotate(345deg) ;
+        width: 60px;
+        margin-right: -6px;
+        margin-bottom: 35px;
+        /* background-color: red; */
+    }
+    div.topfile
+    {
+        /* background-color: lightpink; */
+    }
+
+/* 標題行右邊區塊 */
+    div.righttitle
+    {
+        text-align: right;
+        margin-right: 20px;
+        font-size: 16px;   
+        font-family: '';  
+    }
+    #searchGoogle
+    {   
+        /* opacity: 0.7; */
+        height: 20px;
+        width: 140px;
+        margin-top: 25px;
+        /* background-color: red; */
+    }
+    span#searchspan:hover
+    {
+        cursor: pointer;
+        color: rgba(255, 182, 193, 0.7);
+        /* font-size: 25px;
+        margin-right: -12.5px; */
+    }
+    #searchGoogle:focus
+    {
+        background-color: rgba(245, 245, 245, 0.9);
+        /* color: gray; */
+        border-width: 3px;
+    }
+
+
+
+}
+@media screen 
+and (max-width: 640px)
+{
+       
+    /* body
+    {
+        background-image: url("../MyIMG/1029325.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 80%;
+
+    } */
+    header::before {    
+        content: "";
+        background-image: url('../MyIMG/1029324.jpg');
+        background-size: cover;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+        z-index: -2;
+        background-position-x: 35%;
+    }
+   
+    /* 菜單調整 */
+    span.navbar-toggler-icon{margin-top: 17%;}
+    /* 菜單調整 */
+            
+/* 互動效果區塊 */
+    img.titleramen:hover
+    {
+        transform: rotate(30deg);
+
+    }
+    div.titleIMG:hover
+    {
+        transform: rotate(10deg);
+        font-size: 110%;
+        /* margin-top: -2000px; */
+         margin-right: -15px;
+        
+    }
+    a:visited
+    {
+        color: rgba(190, 0, 0, 0.808);
+        
+    }    
+
+
+/* 左邊標題區塊 */
+    div.lefttitle-outside
+    {
+        /* background-color: red; */
+        /* position: relative; */
+        z-index: ;
+    
+    }
+
+    div.lefttitle-inside
+    {
+        /* 使菜單在區塊中間 */
+        margin-top: 30px ;
+        /* background-color: red; */
+        display: inline-block;
+        /* width: auto;
+        height: auto; */
+        font-family: 'Permanent_Marker';
+    }
+    div.lefttitle-inside
+    {
+        font-size: 16px;
+    }
+
+
+    i.bi-list
+    {
+        font-size:smaller ;
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    span.navbar-toggler-icon
+    {
+        text-decoration: none;
+        color: rgba(190, 0, 0, 0.808);
+        /* background-color: red; */
+    }
+    .collapse
+    {
+        /* position: absolute; */
+    }
+
+/* 正中間標題區塊 */
+header
+{
+    
+}
+div.titlefont2
+{
+    /* font-size: 1vmin; */
+    font-size: 15px ;       
+    position: relative;
+    margin-top: -13%;
+    /* margin-top: -10px; */
+    margin-left: 5px;        
+}
+div.titlefont
+{
+    font-size: 200%;
+    
+    /* font-size: 50px; */
+}
+
+
+    .toplogal
+    {
+        /* background-color: aqua; */
+        text-align: center;
+        color: rgba(204, 76, 75, 0.9);
+        margin-left: -60px;
+    }
+
+    div.titleIMG
+    {
+        display: inline-block;
+        /* background-color: violet; */
+    }
+    div.titlefont,div.titlefont2
+    {
+        font-family: 'Shippori Mincho'; 
+    }
+
+    img.titleramen
+    {
+        transform:rotate(345deg) ;
+        width: 45px;
+        margin-right: -6px;
+        margin-bottom: 25px;
+        /* background-color: red; */
+    }
+    div.topfile
+    {
+        /* background-color: lightpink; */
+    }
+
+/* 標題行右邊區塊 */
+    div.righttitle
+    {
+        text-align: right;
+        margin-right: 5px;
+        font-size: 10px;   
+        font-family: '';  
+    }
+    #searchGoogle
+    {   
+        /* opacity: 0.7; */
+        height: 16px;
+        width: 80px;
+        margin-top: 20px;
+        /* background-color: red; */
+    }
+    span#searchspan:hover
+    {
+        cursor: pointer;
+        color: rgba(255, 182, 193, 0.7);
+        /* font-size: 25px;
+        margin-right: -12.5px; */
+    }
+    #searchGoogle:focus
+    {
+        background-color: rgba(245, 245, 245, 0.9);
+        /* color: gray; */
+        border-width: 3px;
+    }
+
+
+
+
+}
+
+
+
+/* 最後調整 標題顏色 */
+.toplogal a
+{
+    color: rgba(190, 0, 0, 0.808);
+    text-decoration: none;
+
+}

@@ -1,0 +1,72 @@
+/* 右邊小泉區塊 */
+.rightIMG
+{
+    /* background-color: red; */
+    height: 100px; /*內容底色效果*/
+    width: 18%;
+    z-index: 2;
+    position: absolute;
+    top: 0vh;
+    right: 0;
+}
+
+/* 右下角回到最上面 */
+.bi-arrow-up-square-fill
+{
+    font-size: 80px;
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    bottom: 0;
+}
+a.totop
+{
+    color: rgba(50, 50, 50, 0.9);
+}
+.totop:active
+{
+    color:rgba(50, 50, 50, 0.8);
+}
+.totop:hover
+{
+    /* color: rgba(190, 0, 0, 0.808); */
+}   
+@media screen 
+and (min-width: 1500px) 
+{
+    .bi-arrow-up-square-fill
+    {
+        font-size: 80px;
+        position: fixed;
+        z-index: 3;
+        right: 0;
+        top: 60%;
+    }
+}
+
+@media screen 
+and (min-width: 900px) and (max-width: 1500px)
+{
+    .bi-arrow-up-square-fill
+    {
+        font-size: 60px;
+    }
+}
+
+@media screen 
+and (min-width: 640px) and (max-width: 900px)
+{
+    .bi-arrow-up-square-fill
+    {
+        font-size: 40px;
+    }
+}
+
+@media screen 
+ and (max-width: 640px)
+ {
+    .bi-arrow-up-square-fill
+    {
+        font-size: 20px;
+    }
+ }

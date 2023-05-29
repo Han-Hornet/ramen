@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拉麵國度</title>
+    <!-- 動畫樣式 -->
+    <link rel="stylesheet" href="./MyCss/animate.css">
+    <link rel="stylesheet" href="./MyCss/loading.css">
+    <!-- 動畫樣式 -->
+
+    <!-- Boostrap的CSS設定跟ICON -->
+    <link rel="stylesheet" href="./Boostrap/_css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Boostrap的CSS設定跟ICON -->
+
+    <!-- JS動畫(菜單) -->
+    <script src="./Boostrap/_js/bootstrap.bundle.js"></script>
+    <!-- JS動畫(菜單) -->
+
+    <!-- 文字 -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <!-- 文字 -->
+    <link rel="stylesheet" href="./MyCss/titlestyle.css">
+    <link rel="stylesheet" href="./MyCss/dropdown.css">
+    <link rel="stylesheet" href="./MyCss/midimfostyle.css">
+    <link rel="stylesheet" href="./MyCss/rightimfo.css">
+    <link rel="stylesheet" href="./MyCss/koizumi.css">
+    <link rel="stylesheet" href="./MyCss/interduction.css">
+    <link rel="stylesheet" href="./MyCss/footer.css">
+
+
+    <!-- 測試 -->
+    <!-- <script src="./MyJs/menujs.js"></script> -->
+    <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/ruyadorno/node/lib/util.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script> -->
+
+    <!-- <script src="./Boostrap/_js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- 測試 -->
+
+
+
+    <style>
+
+        .carousel-item img
+        {
+            width: 100%;
+            max-height: 500px;
+            /* object-fit: cover; */
+            object-fit: fill;
+            animation-name: flowout;
+            animation-duration: 2s;
+        }
+        .carousel-inner{border-radius: 3%;}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="topfile">
+            <!-- 置頂區塊 -->
+            <div style="display: flex;">
+                <!-- 左邊菜單區塊 -->
+                <div class="lefttitle-outside" style="flex: 4;">
+                    <div class="lefttitle-inside">
+                        <!-- <a href="#"><i class="bi bi-list"></i><span class="navbar-toggler-icon">MENU</span></a> -->
+                        <div class="container-fluid">
+                            <button class="navbar-toggler animate__animated animate__fadeInLeft" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                                aria-controls="navbarSupportedContent" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <a href="#" class="menua"><i class="bi bi-list"></i><span
+                                        class="navbar-toggler-icon">MENU</span></a>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown dropend">
+                                        <!--未設置分類-->
+
+                                        <a href="./allview.html"><button class="dropbtn dropdown" href="./allview.html"
+                                                id="navbarDropdown" role="button" aria-expanded="false"
+                                                style="text-decoration: none;" >
+                                                拉麵介紹
+                                            </button></a>
+                                            <nav class="dropdown-content" id="ramentype">
+                                                <a href="./allflavor.html">總覽</a>
+                                                <a href="./tori.html">雞白湯拉麵</a>
+                                                <a href="./tonnkotsu.html">豚骨拉麵</a>
+                                                <a href="./sause.html">醬油拉麵</a>
+                                                <a href="./miso.html">味噌拉麵</a>
+                                                <a href="./shio.html">鹽味拉麵</a>
+                                                <a href="./karai.html">超辣拉麵</a>
+                                            </nav>
+
+                                    </li>
+                                    <li class="nav-item dropdown dropend">
+                                        <a href="./tori.html"><button class="dropbtn dropdown" href="./allview.html"
+                                            id="navbarDropdown" role="button" aria-expanded="false"
+                                            style="text-decoration: none;" >
+                                            雞湯拉麵
+                                        </button></a>
+                                    </li>
+                                    <li class="nav-item dropdown dropend">
+                                        <a href="./tonnkotsu.html"><button class="dropbtn dropdown" href="./allview.html"
+                                            id="navbarDropdown" role="button" aria-expanded="false"
+                                            style="text-decoration: none;" >
+                                            豚骨拉麵
+                                        </button></a>
+                                    </li>
+                                    <li class="nav-item dropdown dropend">
+                                        <a href="./sause.html"><button class="dropbtn dropdown" href="./allview.html"
+                                            id="navbarDropdown" role="button" aria-expanded="false"
+                                            style="text-decoration: none;" >
+                                            醬油拉麵
+                                        </button></a>
+                                    </li>
+                                    <li class="nav-item dropdown dropend">
+                                        <a href="./miso.html"><button class="dropbtn dropdown" href="./allview.html"
+                                            id="navbarDropdown" role="button" aria-expanded="false"
+                                            style="text-decoration: none;" >
+                                            味噌拉麵
+                                        </button></a>
+                                    </li>
+                                    <li class="nav-item dropdown dropend">
+                                        <a href="./shio.html"><button class="dropbtn dropdown" href="./allview.html"
+                                            id="navbarDropdown" role="button" aria-expanded="false"
+                                            style="text-decoration: none;" >
+                                            鹽味拉麵
+                                        </button></a>
+                                    </li>
+                                    <li class="nav-item dropdown dropend">
+                                        <a href="./karai.html"><button class="dropbtn dropdown" href="./allview.html"
+                                            id="navbarDropdown" role="button" aria-expanded="false"
+                                            style="text-decoration: none;" >
+                                            超辣拉麵
+                                        </button></a>
+                                    </li>
+
+
+
+                                    <!--未設置分類-->
+                                    <li class="nav-item dropdown dropend">
+                                        <a id="aboutme" class="dropbtn dropdown aboutme" href="./aboutme.html" id="navbarDropdown"
+                                            role="button" aria-expanded="false" style="text-decoration: none;"
+                                            >
+                                            關於我
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 拉麵標題區塊 -->
+                <div class="toplogal animate__animated animate__fadeInDown" style="flex: 4;">
+                    <a href="./index.html"><img class="titleramen"
+                        src="https://png.pngtree.com/png-clipart/20221210/ourmid/pngtree-a-bowl-of-noodles-png-image_6519194.png"
+                        alt=""></a>
+                    <div class="titleIMG">
+                        <a href="./index.html"><div class="titlefont" id="totop">
+                            <div>ラーメン</div>
+                            <div class="titlefont2">麺の頂点！</div>
+                        </div></a>
+                    </div>
+                </div>
+
+                <!-- 右邊選單 -->
+                <div class="righttitle animate__animated animate__fadeInRight" style="flex: 4;">
+                    <div class="rightinput">
+                        <b> 關鍵字 : </b><input id="searchGoogle" type="text" placeholder="請輸入想查詢的資料"><b><span
+                                id="searchspan"> 搜尋</span></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 網頁內容 -->
+    <div class="body container">
+        <!-- 左邊中斷內容 -->
+        
+        <div class="leftimfo">
+
+        </div>
+        <!-- 中心內容 -->
+        <div class="midimfo">
+            <div class="mycontent">
+                <div data-bs-interval="3000" class="carousel slide" data-bs-ride="carousel" id="test1">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#test1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <!-- aria-label的屬性值內容為提供給網頁閱讀器朗讀時所參照的值 例 : 內容為笨蛋 網頁朗讀就會唸笨蛋 -->
+                        <button type="button" data-bs-target="#test1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#test1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <!-- <button type="button" data-bs-target="#test1" data-bs-slide-to="3" aria-label="Slide 4"></button> -->
+                        <!-- <button type="button" data-bs-target="#test1" data-bs-slide-to="4" aria-label="Slide 5"></button> -->
+                        <!-- <button type="button" data-bs-target="#test1" data-bs-slide-to="5" aria-label="Slide 6"></button> -->
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="https://www.facebook.com/thesaltramen/?locale=zh_TW" target="_blank"><img src="./MyIMG/miso/miso1-1.png" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://www.facebook.com/starmiso.ramen/" target="_blank"><img src="./MyIMG/miso/miso1-2.jpg" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://longhoramen.com/" target="_blank"><img src="./MyIMG/miso/miso1-3.jpg" alt=""></a>
+                        </div>
+                        <!-- <div class="carousel-item">
+                            <a href="./miso.html"><img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.6435-9/117764483_1794910964010098_5017505751616313728_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=87Yf6JV5x-MAX-l-P1X&_nc_ht=scontent.ftpe4-1.fna&oh=00_AfDD8c-qbgOo5rFPku0a6i11t-CV5UPpouaY9Ox-ri6iVg&oe=64195055" alt=""></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./shio.html"><img src="https://scontent.ftpe4-2.fna.fbcdn.net/v/t1.6435-9/87421617_1637381549763041_3082506785777516544_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Rd3nsmq1gYwAX-MMadt&_nc_ht=scontent.ftpe4-2.fna&oh=00_AfCHO7nGw9jeJqUahyUm2ZF7w772ZRJd0sVux9bhrHy5Hw&oe=6419B576" alt="" class="img-fluid"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./karai.html"><img src="https://scontent.ftpe4-1.fna.fbcdn.net/v/t1.6435-9/117764483_1794910964010098_5017505751616313728_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=87Yf6JV5x-MAX-l-P1X&_nc_ht=scontent.ftpe4-1.fna&oh=00_AfDD8c-qbgOo5rFPku0a6i11t-CV5UPpouaY9Ox-ri6iVg&oe=64195055" alt=""></a>
+                        </div> -->
+                    </div>
+        
+                      <button class="carousel-control-prev" type="button" data-bs-target="#test1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#test1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div> 
+                <div class="mycontent2">
+
+                    <p class="contenttitle"><span>&#x1f35c; 味噌ラーメン（みそラーメン）：味噌拉麵</span></p>
+                    <p><span class="contentspan">味增拉麵的出處是北海道的札幌地區，別名是「札幌拉麵」，</span></p>
+                    <p>&nbsp;</p>
+                    <p><span class="contentspan">札幌拉麵的配料種類非常豐富，像是事先放入味噌及湯頭拌炒調味過的豆芽菜、捲心菜或玉米。</span></p>    
+                    <p><span class="contentspan">他還有另一大特色是在上菜前會在拉麵上放入一塊奶油。因此味道非常濃厚！</span></p>    
+                </div> 
+            </div>
+        </div>
+        <!-- 靠右內容 -->
+        <div class="rightimfo">
+            <div class="rightIMG">
+                <img id="koizumi-rightr" src="./MyIMG/20180116221013.png" alt="">
+            </div>
+            <div class="leftbIMG">
+                <img id="koizumi-leftb" src="./MyIMG/title_koizumi.png" alt="">
+            </div>
+            <a href="#totop" class="totop"><i class="bi bi-arrow-up-square-fill"></i></a>
+        </div>
+    </div>
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. <a class="text-primary" href="#">Bootstrapious.com</a></p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="text-white mb-3">Newsletter</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <form action="#">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <div>
+                        <small>此為測試用網頁，以上資料皆源自網路上</small>
+                        <br>
+                        <small>若有侵權，請告知並將立即下架</small>                   
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

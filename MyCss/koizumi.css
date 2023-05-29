@@ -1,0 +1,138 @@
+#koizumi-rightr
+{
+    position: fixed;
+    max-width: 20%;
+    /* max-block-size: 25% ; */
+    /* block-size: 25%; */
+    right: -1%;
+    /* top: 18%; */
+    /* top: 160px; */
+    /* z-index: -1;  */
+    /* opacity: 0.9; */
+    z-index: 2; 
+    /* background-color: red; */
+    /* animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+    animation-timing-function: ease-in; */
+}
+#koizumi-leftb
+{
+    position: absolute;
+    max-width: 60%;
+    left: -2%;
+    top: 20%;
+    z-index: 1;
+    opacity: 1;
+    /* background-color: red; */
+}
+
+@keyframes flowout {
+    from { opacity: 0;}
+    to   { opacity: 1; }
+}
+
+.rightIMG
+{
+    animation-name: flowout;
+    animation-duration: 5s;
+}
+.leftbIMG
+{
+    animation-name: flowout;
+    animation-duration: 5s;
+}
+
+@media screen and (min-width: 1300px)
+{
+    #koizumi-rightr
+{
+    position: absolute;
+    max-width: 100%;
+    /* max-block-size: 25% ; */
+    /* block-size: 25%; */
+    right: -1%;
+    top: 20vh;
+    /* top: 160px; */
+    /* z-index: -1;  */
+    /* opacity: 0.9; */
+    z-index: 2; 
+    /* background-color: red; */
+    /* animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+    animation-timing-function: ease-in; */
+}
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px)
+{
+    #koizumi-rightr
+{
+    position: fixed;
+    max-width: 20%;
+    /* max-block-size: 25% ; */
+    /* block-size: 25%; */
+    right: -1%;
+    top: 150px;
+    /* top: 160px; */
+    /* z-index: -1;  */
+    /* opacity: 0.9; */
+    z-index: 2; 
+    /* background-color: red; */
+    /* animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+    animation-timing-function: ease-in; */
+}
+
+}
+@media screen and (min-width: 900px) and (max-width: 1200px)
+{
+    #koizumi-rightr
+{
+    position: fixed;
+    max-width: 20%;
+    /* max-block-size: 25% ; */
+    /* block-size: 25%; */
+    right: -1%;
+    top: 15%;
+    /* top: 160px; */
+    /* z-index: -1;  */
+    /* opacity: 0.9; */
+    z-index: 2; 
+    /* background-color: red; */
+    /* animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+    animation-timing-function: ease-in; */
+}
+
+}
+
+@media screen and (max-width: 900px) 
+{
+    #koizumi-rightr
+{
+    position: absolute;
+    max-width: 100%;
+    /* max-block-size: 25% ; */
+    /* block-size: 25%; */
+    right: -1%;
+    top: 10vh;
+    /* top: 160px; */
+    /* z-index: -1;  */
+    /* opacity: 0.9; */
+    z-index: 2; 
+    /* background-color: red; */
+    /* animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 3s;
+
+    animation-timing-function: ease-in; */
+}
+
+}

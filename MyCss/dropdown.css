@@ -1,0 +1,356 @@
+.aboutme
+{
+  margin-top: 25%;
+  padding-left: -1%;
+}
+.dropdown
+{
+  z-index: 2;
+}
+
+
+
+
+
+@media screen 
+and (min-width: 1300px)
+{
+.dropdown {
+    color: rgba(190, 0, 0, 0.808);
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 6%;
+    font-weight: 600;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 182, 193, 0.6);
+    width: 200px;
+    font-size: 25px;
+    z-index: 2;
+    border-radius: 5%;
+    top: 10%;
+    left: 100%;
+  }
+
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+  }
+  
+  .dropdown-content a:hover 
+  {
+    background-color:rgba(255, 182, 193, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+    z-index: 1;
+    border-radius: 10%;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:  rgba(255, 182, 193, 0.8);
+    color: black;
+  }
+
+
+/* 新版 */
+.dropdown-menu
+{
+  background-color: rgba(255, 182, 193, 0.6);
+  width: 200px;
+  font-size: 25px;
+}
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 600;
+}
+.dropdown-item:hover {
+  background-color: rgba(255, 182, 193, 0.9);
+  /* min-width: 300px; 清單下拉內容寬度 */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+  z-index: 1;
+  border-radius: 10%;
+}
+.dropbtn
+{
+  width: 200px;
+  text-align: left;
+  font-size: calc(1em - 15px) ;
+}
+}
+
+@media screen 
+and (min-width: 900px) and (max-width: 1300px)
+{
+  .dropdown {
+    color: rgba(190, 0, 0, 0.808);
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 6%;
+    font-weight: 600;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 182, 193, 0.6);
+    min-width: 160px;
+    font-size: calc(1em - 12px);
+    z-index: 2;
+    border-radius: 5%;
+    top: 10%;
+    left: 100%;
+    width: 120px;
+  }
+
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover 
+  {
+    background-color:rgba(255, 182, 193, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+    z-index: 1;
+    border-radius: 10%;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:  rgba(255, 182, 193, 0.8);
+    color: black;
+  }    
+    
+    /* 新版 */
+    .dropdown-menu
+    {
+      background-color: rgba(255, 182, 193, 0.6);
+      max-width: max-content;
+      font-size: calc(1em - 12px);
+    }
+    .dropdown-menu a {
+      color: black;
+      padding: 8px 14px;
+      text-decoration: none;
+      display: block;
+
+      font-weight: 600;
+    }
+    .dropdown-item:hover {
+      background-color: rgba(255, 182, 193, 0.9);
+      /* min-width: 300px; 清單下拉內容寬度 */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+      z-index: 1;
+      border-radius: 10%;
+    }
+    .dropbtn
+    {
+      width: 120px;
+      text-align: left;
+      font-size: calc(1em - 5px) ;
+    }
+}
+@media screen 
+and (min-width: 640px) and (max-width: 900px)
+{
+  .dropdown {
+    color: rgba(190, 0, 0, 0.808);
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 6%;
+    font-weight: 600;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 182, 193, 0.6);
+    max-width: max-content;
+    font-size: calc(1em - 7px);
+    z-index: 2;
+    border-radius: 5%;
+    top: 10%;
+    left: 100%;
+    width: 120px;
+  }
+
+  
+  .dropdown-content a {
+    color: black;
+    padding: 7px 12px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover 
+  {
+    background-color:rgba(255, 182, 193, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+    z-index: 1;
+    border-radius: 10%;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:  rgba(255, 182, 193, 0.8);
+    color: black;
+  }    
+  
+  
+  /* 新版 */
+  .dropdown-menu
+  {
+    background-color: rgba(255, 182, 193, 0.6);
+    min-width: 100px;
+    font-size: calc(1em - 7px);
+  }
+  .dropdown-menu a {
+    color: black;
+    padding: 7px 12px;
+    text-decoration: none;
+    display: block;
+    font-weight: 600;
+  }
+  .dropdown-item:hover {
+  background-color: rgba(255, 182, 193, 0.9);
+  /* min-width: 300px; 清單下拉內容寬度 */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+  z-index: 1;
+  border-radius: 10%;
+  }
+  .dropbtn
+  {
+    width: 80px;
+    text-align: left;
+    font-size: calc(1em - 5px) ;
+  }
+
+}
+@media screen 
+ and (max-width: 640px)
+{
+  .dropdown {
+    color: rgba(190, 0, 0, 0.808);
+    position: relative;
+    display: inline-block;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 6%;
+    font-weight: 600;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 182, 193, 0.6);
+    max-width: max-content;
+    font-size: calc(1em - 14px);
+    z-index: 2;
+    border-radius: 5%;
+    top: 10%;
+    left: 100%;
+    width: 120px;
+  }
+
+  
+  .dropdown-content a {
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+    /* font-weight: 600; */
+  }
+  
+  .dropdown-content a:hover 
+  {
+    background-color:rgba(255, 182, 193, 0.9);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+    z-index: 1;
+    border-radius: 10%;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color:  rgba(255, 182, 193, 0.8);
+    color: black;
+  }    
+  
+  
+  /* 新版 */
+  .dropdown-menu
+  {
+    background-color: rgba(255, 182, 193, 0.6);
+    min-width: inherit;
+    font-size: calc(1em - 10px);
+  }
+  .dropdown-menu a {
+    color: black;
+    padding: 3px 10px;
+    text-decoration: none;
+    display: block;
+    font-weight: 900;
+  }
+  .dropdown-item:hover {
+    background-color: rgba(255, 182, 193, 0.9);
+    /* min-width: 300px; 清單下拉內容寬度 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); /*選單內團出後有立體感*/
+    z-index: 1;
+    border-radius: 10%;
+  }
+  .dropbtn
+  {
+    width: 60px;
+    text-align: left;
+    font-size: calc(1em - 5px) ;
+  }
+  .aboutme
+{
+  margin-top: 15%;
+}
+
+}
+
+/* #aboutme{color: rgba(190, 0, 0, 0.808);} */
